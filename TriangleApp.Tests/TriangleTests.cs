@@ -33,7 +33,7 @@ public class TriangleTests
     }
 
     [Fact]
-    public void GetTriangleType_InvalidSumOfAngles_ThrowsArgumentException()
+    public void GetTriangleType_InvalidSumOfAngles_ThrowsTriangleException()
     {
         var triangle = new Triangle();
         
@@ -41,7 +41,7 @@ public class TriangleTests
     }
 
     [Fact]
-    public void GetTriangleType_NegativeOrZeroAngle_ThrowsArgumentException()
+    public void GetTriangleType_NegativeOrZeroAngle_ThrowsTriangleException()
     {
         var triangle = new Triangle();
         
